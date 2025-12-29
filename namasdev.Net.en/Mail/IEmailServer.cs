@@ -1,8 +1,8 @@
 ﻿using System.Net.Mail;
 
-namespace namasdev.Net.Correos
+namespace namasdev.Net.Mail
 {
-    public interface IMailServer
+    public interface IEmailServer
     {
         void SendMail(MailMessage mail);
     }

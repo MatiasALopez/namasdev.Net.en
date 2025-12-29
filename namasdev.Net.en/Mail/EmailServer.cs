@@ -3,20 +3,20 @@ using System.Net.Mail;
 
 using namasdev.Core.Validation;
 
-namespace namasdev.Net.Correos
+namespace namasdev.Net.Mail
 {
-    public class MailServer : IMailServer, IDisposable
+    public class EmailServer : IEmailServer, IDisposable
     {
         private SmtpClient _smtpClient;
 
-        public MailServer(MailServerParameters parameters)
+        public EmailServer(EmailServerParameters parameters)
         {
             Parameters = parameters;
 
             BuildSmtpClient();
         }
 
-        public MailServerParameters Parameters { get; private set; }
+        public EmailServerParameters Parameters { get; private set; }
         
         private void BuildSmtpClient()
         {

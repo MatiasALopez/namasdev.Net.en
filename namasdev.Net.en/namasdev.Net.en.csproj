@@ -47,9 +47,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Mail\IMailServer.cs" />
-    <Compile Include="Mail\MailServer.cs" />
-    <Compile Include="Mail\MailServerParameters.cs" />
+    <Compile Include="Mail\IEmailServer.cs" />
+    <Compile Include="Mail\EmailServer.cs" />
+    <Compile Include="Mail\EmailServerParameters.cs" />
     <Compile Include="Ftp\FtpFile.cs" />
     <Compile Include="Ftp\FtpClient.cs" />
     <Compile Include="Ftp\FtpDirectory.cs" />

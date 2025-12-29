@@ -1,15 +1,15 @@
 ﻿using System.Collections.Generic;
 using System.Net;
 
-namespace namasdev.Net.Correos
+namespace namasdev.Net.Mail
 {
-    public class MailServerParameters
+    public class EmailServerParameters
     {
-        public MailServerParameters()
+        public EmailServerParameters()
         {
         }
 
-        public MailServerParameters(string host,
+        public EmailServerParameters(string host,
             int? port = null, NetworkCredential credentials = null, bool? enableSsl = null,
             string from = null, string bcc = null,
             IEnumerable<KeyValuePair<string, string>> headers = null,
